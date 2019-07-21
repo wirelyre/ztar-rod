@@ -86,6 +86,8 @@ impl State {
                     win.grab_cursor(self.mouse_down).unwrap();
                     win.hide_cursor(self.mouse_down);
                 }
+
+                _ => (),
             },
 
             Event::DeviceEvent {
